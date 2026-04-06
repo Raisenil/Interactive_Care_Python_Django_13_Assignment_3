@@ -65,7 +65,7 @@ function renderExpenses() {
 			li.className =
 				'list-group-item d-flex justify-content-between align-items-center';
 			li.innerHTML = `
-                <span class="fw-bold text-primary">${amount.toFixed(2)} দাকা</span>
+                <span class="fw-bold text-primary">${amount.toFixed(2)} ৳</span>
                 <button class="btn btn-sm btn-danger" onclick="deleteExpense(${index})">Delete</button>
             `;
 			expenseList.appendChild(li);
