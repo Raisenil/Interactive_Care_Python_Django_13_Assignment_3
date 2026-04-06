@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book Manager</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="bg-light py-5">
+		<div class="container" style="max-width: 900px">
+			<div class="card shadow">
+				<div class="card-header bg-primary text-white">
+					<h1 class="mb-0">📚 Book Management System</h1>
+				</div>
+				<div class="card-body">
+					<div class="row mb-4">
+						<div class="col-md-5">
+							<input
+								type="text"
+								id="bookNameInput"
+								class="form-control"
+								placeholder="Enter book name"
+								maxlength="100"
+							/>
+						</div>
+						<div class="col-md-5">
+							<input
+								type="text"
+								id="authorNameInput"
+								class="form-control"
+								placeholder="Enter author name"
+								maxlength="100"
+							/>
+						</div>
+						<div class="col-md-2">
+							<button id="addBookBtn" class="btn btn-primary w-100">
+								Add Book
+							</button>
+						</div>
+					</div>
+
+					<h5 class="mb-3">Books List</h5>
+					<div class="table-responsive">
+						<table id="booksTable" class="table table-hover">
+							<thead class="table-primary">
+								<tr>
+									<th>Serial</th>
+									<th>Book Name</th>
+									<th>Author Name</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody id="tableBody">
+								<tr class="empty-row">
+									<td colspan="4" class="text-center text-muted">
+										No books added yet. Start by adding a book!
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<button id="clearAllBtn" class="btn btn-danger w-100 mt-3">
+						Clear All Books
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
